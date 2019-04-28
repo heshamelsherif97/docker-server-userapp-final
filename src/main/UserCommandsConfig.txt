@@ -1,0 +1,8 @@
+SignUp, CommandPattern.userStories.SignUp
+getUsers, CommandPattern.userStories.getAllUsers
+getUser, CommandPattern.userStories.getSingleUser
+updateFirstName, CommandPattern.userStories.updateFirstName
+updateLastName, CommandPattern.userStories.updateLastName
+updatePassword, CommandPattern.userStories.updatePassword
+login, CommandPattern.userStories.login
+balabizo1, CommandPattern.userStories.getAllUsers
