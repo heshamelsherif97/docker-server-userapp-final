@@ -10,6 +10,7 @@ import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 
 public class Controller {
+    public static Controller controllerinstance = new Controller();
 
     public static void start(int port) {
 
@@ -34,6 +35,10 @@ public class Controller {
             workerGroup.shutdownGracefully();
             bossGroup.shutdownGracefully();
         }
+    }
+
+    public static Controller getInstance(){
+        return controllerinstance;
     }
 
     public static void main(String[] args) throws Exception {

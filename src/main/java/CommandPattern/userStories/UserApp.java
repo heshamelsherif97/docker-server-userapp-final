@@ -23,9 +23,14 @@ public class UserApp {
     private static final String RPC_QUEUE_NAME = "users";
     static ExecutorService executor = AppThreadPool.getInstance();
     private static int _prefetchCount = 1000;
+    private static UserApp userappinstance = new UserApp();
 
     public static int get_prefetchCount() {
         return _prefetchCount;
+    }
+
+    public static UserApp getInstance(){
+        return userappinstance;
     }
 
     public static void set_prefetchCount(int _prefetchCount) {
